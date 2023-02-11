@@ -14,28 +14,30 @@
 
 .project-container {
   height: 600px;
-  width: 400px;
-  padding: 20px 35px;
+  width: 350px;
+  padding: 20px 30px;
   background-color: #999999;
   border-radius: 20px;
   margin: 15px;
   position: relative;
   overflow: auto;
   text-align: center;
-  box-shadow: var(--mainColor) 0px 4px 8px 10px;
-  cursor: scroll;
+  /* align-content: center;
+  justify-content: center; */
+  /* box-shadow: var(--mainColor) 0px 4px 8px 10px; */
+  /* cursor: scroll; */
+  margin:auto
 }
 
-
-hr {
-  color: var(--mainColor);
+/* hr {
+  color: black;
   border-top: 20px solid var(--mainColor) !important;
-}
+} */
 
-h2,
+/* h2,
 h3 {
   color: var(--mainColor);
-}
+} */
 
 .project-subtitle {
   font-size: 18px;
@@ -49,17 +51,23 @@ h3 {
 
 .project-image {
   padding: 5px;
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
   margin-bottom: 10px;
-  border-bottom: 8px solid var(--mainColor);
-  border-radius: 20%;
+  /* border-bottom: 8px solid var(--mainColor); */
+  border-radius: 10%;
+  width: 21.0rem;
+  height: 20.0rem;
+ align-items:center;
+ display: flex;
+ /* margin:auto */
 }
 
 .logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   gap: 20px;
 }
 
@@ -67,13 +75,16 @@ h3 {
   color: rgb(22, 22, 22);
 }
 
-.github-logo:hover,
+/* .github-logo:hover,
 .project-logo:hover {
   color: var(--mainColor);
   animation: animatezoom 0.5s;
-}
+} */
 
-img {
-  width: 50px;
-  height: 50px;
-}
+/* img.project-image {
+  width: 350px;
+  height: 350px;
+  width: 21.0rem;
+  height: 20.0rem;
+  text-align:center
+} */
