@@ -1,0 +1,115 @@
+.my-custom-class {
+    max-width: 100%;
+    width: 90%;
+    padding: 15px;
+    margin: 5% auto;
+    border: 2px solid black;
+    box-sizing: border-box;
+  }
+
+.contain {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  input {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    
+  }
+  
+  textarea {
+    width: 100%;
+    
+    
+  }
+  
+  button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+
+  .form-name {
+    margin-right: 5%;
+  }
+
+  .form-name,
+  .form-email {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    
+  }
+  
+  /* .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form-row > div {
+    flex-basis: calc(50% - 10px);
+  }
+  
+  @media (max-width: 768px) {
+    .form-row > div {
+      flex-basis: 100%;
+    }
+  } */
+
+  .input-row .input-box {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  
+}
+form > .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%
+  }
+
+/* .col {
+    width: 30%
+} */
+

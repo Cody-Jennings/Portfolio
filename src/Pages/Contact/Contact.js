@@ -1,7 +1,126 @@
+// import React from "react";
+// import { Container, Row, Col } from "react-bootstrap";
+// import { useState } from "react";
+// import './Contact.css'
+// function Contact() {
+
+//   const [name, setName] = useState("");
+//   const [email, setEmail] = useState("");
+//   const [message, setMessage] = useState("");
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+//     const mailToLink = `mailto:jenningscc9@gmail.com?subject=Contact Request&body=${encodeURIComponent(body)}`;
+//     window.location.href = mailToLink;
+//     setName('');
+//     setEmail('');
+//     setMessage('');
+
+//     alert(`Your message has been sent!\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+//   }
+
+//   const contactConfig = {
+//     YOUR_EMAIL: 'jenningscc9@gmail.com',
+//     YOUR_FONE: '(336)709-6999',
+//     description:
+//       'I look forward to hearing from you and our future collaborations! ',
+//     YOUR_SERVICE_ID: 'service_id',
+//     YOUR_TEMPLATE_ID: 'template_id',
+//     YOUR_USER_ID: 'user_id',
+//   };
+
+
+//   return (
+
+//     <Container className="contain" >
+
+//       <Row>
+//         <Col>
+//           <h1>Contact Me</h1>
+//           <hr/>
+//         </Col>
+//       </Row>
+//       <Row>
+//         <Col>
+//           <h3>Cody Jennings</h3>
+//           <address>
+//             <strong>Email:</strong>{" "}
+//             <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
+//               {contactConfig.YOUR_EMAIL}
+//             </a>
+//             <br />
+//             <br />
+//             {contactConfig.hasOwnProperty("YOUR_FONE") ? (
+//               <p>
+//                 <strong>Phone:</strong> {contactConfig.YOUR_FONE}
+//               </p>
+//             ) : (
+//               ""
+//             )}
+//           </address>
+//           <p>{contactConfig.description}</p>
+//         </Col>
+//         <Col>
+//           <form onSubmit={handleSubmit}>
+//             <Row>
+//               <Col>
+//                 <input
+//                   id="name"
+//                   name="name"
+//                   placeholder="Name"
+//                   type="text"
+//                   value={name}
+//                   onChange={e => setName(e.target.value)}
+//                   required
+//                 />
+//               </Col>
+//               <Col>
+//                 <input
+//                   id="email"
+//                   name="email"
+//                   placeholder="Email"
+//                   type="email"
+//                   value={email}
+//                   onChange={e => setEmail(e.target.value)}
+//                   required
+//                 />
+//               </Col>
+//             </Row>
+//             <textarea
+//               id="message"
+//               name="message"
+//               placeholder="Message"
+//               rows="5"
+//               value={message}
+//               onChange={e => setMessage(e.target.value)}
+//               required
+//             ></textarea>
+//             <br />
+//             <Row>
+//               <Col>
+//                 <button type="submit">
+//                   Send
+//                 </button>
+//               </Col>
+//             </Row>
+//           </form>
+//         </Col>
+//       </Row>
+//     </Container>
+
+
+//   );
+// }
+
+// export default Contact
+
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
 import './Contact.css'
+
 function Contact() {
 
   const [name, setName] = useState("");
@@ -34,20 +153,19 @@ function Contact() {
 
   return (
 
-    <Container className="contain animate__animated animate__lightSpeedInLeft " >
-
-      <Row className="mb-5 mt-3">
-        <Col lg="8">
-          <h1 className="display-4 mb-4">Contact Me</h1>
-          <hr className="t_border my-4 ml-0 text-left" />
+    <Container fluid className="my-custom-class" >
+      <Row className="text-center">
+        <Col>
+          <h1 className="display-4">Contact Me</h1><br></br>
+          <hr/><br></br>
         </Col>
       </Row>
-      <Row className="sec_sp">
-        <Col lg="5" className="mb-5">
-          <h3 className="color_sec py-4">Cody Jennings</h3>
-          <address>
+      <Row className="justify-content-md-center">
+        <Col>
+          <h3 className="text-center mb-3">Cody Jennings</h3>
+          <address className="mb-3">
             <strong>Email:</strong>{" "}
-            <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
+            <a href={`mailto:${contactConfig.YOUR_EMAIL}`} className="text-decoration-none">
               {contactConfig.YOUR_EMAIL}
             </a>
             <br />
@@ -61,13 +179,12 @@ function Contact() {
             )}
           </address>
           <p>{contactConfig.description}</p>
-        </Col>
-        <Col lg="7" className="d-flex align-items-center">
-          <form onSubmit={handleSubmit} className="contact__form w-100">
-            <Row>
-              <Col lg="6" className="form-group">
+        </Col><br></br>
+        <Col md="6">
+          <form onSubmit={handleSubmit}>
+            <Row className='input-row'>
+              <Col>
                 <input
-                  className="form-control"
                   id="name"
                   name="name"
                   placeholder="Name"
@@ -75,11 +192,11 @@ function Contact() {
                   value={name}
                   onChange={e => setName(e.target.value)}
                   required
+                  className="form-name input-box"
                 />
               </Col>
-              <Col lg="6" className="form-group">
+              <Col>
                 <input
-                  className="form-control rounded-0"
                   id="email"
                   name="email"
                   placeholder="Email"
@@ -87,11 +204,11 @@ function Contact() {
                   value={email}
                   onChange={e => setEmail(e.target.value)}
                   required
+                  className="form-email input-box"
                 />
               </Col>
             </Row>
             <textarea
-              className="form-control rounded-0"
               id="message"
               name="message"
               placeholder="Message"
@@ -99,11 +216,11 @@ function Contact() {
               value={message}
               onChange={e => setMessage(e.target.value)}
               required
+              className="form-email input-box"
             ></textarea>
-            <br />
             <Row>
-              <Col lg="12" className="form-group">
-                <button className="btn ac_btn" type="submit">
+              <Col className="d-flex justify-content-center">
+                <button type="submit" className="btn btn-primary">
                   Send
                 </button>
               </Col>
@@ -112,9 +229,7 @@ function Contact() {
         </Col>
       </Row>
     </Container>
-
-
   );
 }
 
-export default Contact
+export default Contact;
