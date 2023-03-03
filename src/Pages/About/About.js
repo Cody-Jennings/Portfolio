@@ -1,12 +1,15 @@
 import React from 'react'
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedin, faHtml5, faCss3Alt, faSquareJs, faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { SiMongodb, SiExpress } from "react-icons/si"
+import { FaLaptopCode } from "react-icons/fa"
+
 import "../About/About.css"
 
 function About() {
     return (
         <div className='about'>
-            
+
             <div className='about-container'>
                 <h1>About</h1>
                 <br></br><hr />
@@ -23,24 +26,47 @@ function About() {
                 </div>
                 <br />
                 <div className='skills'>
-                    <br></br><h4>Skills</h4>
+                    <h4>Skills</h4>
                     <br></br>
                     <hr />
                     <br></br>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>HTML5</li>
-                        <li>CSS</li>
-                        <li>MongoDB</li>
-                        <li>Express.Js</li>
-                        <li>React</li>
-                        <li>Node.Js</li>
-                        <li>Programming</li>
-                    </ul>
+                    <div className='skills-grid'>
+                        <div className='skill'>
+                            <FontAwesomeIcon icon={faHtml5} size="2x" />
+                            <span className='skill-title'>HTML5</span>
+                        </div>
+                        <div className='skill'>
+                            <FontAwesomeIcon icon={faCss3Alt} size="2x" />
+                            <span className='skill-title'>CSS3</span>
+                        </div>
+                        <div className='skill'>
+                            <FontAwesomeIcon icon={faSquareJs} size="2x" />
+                            <span className='skill-title'>JavaScript</span>
+                        </div>
+                        <div className='skill'>
+                            <SiMongodb size="2em" title="MongoDB" /> MongoDB
+                        </div>
+                        <div className='skill'>
+                            <SiExpress size="2em" title="Express.js" /> Express.js
+                        </div>
+                        <div className='skill'>
+                            <FontAwesomeIcon icon={faReact} size="2x" />
+                            <span className='skill-title'>React.js</span>
+                        </div>
+                        <div className='skill'>
+                            <FontAwesomeIcon icon={faNodeJs} size="2x" />
+                            <span className='skill-title'>Node.js</span>
+                        </div>
+                        <div className='skill'>
+                            <FaLaptopCode size="2em" title="Programming" /> Programming
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     )
 }
 
 export default About
+     
