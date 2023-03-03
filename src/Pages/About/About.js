@@ -15,15 +15,16 @@ function About() {
                 </p>
                 <br></br><div className='about-logo'>
                     <a className='github-logo' href="https://github.com/Cody-Jennings">
-                        <FontAwesomeIcon icon={faGithub} size="2x" />
+                        <FontAwesomeIcon icon={faGithub} size="3x" />
                     </a>
                     <a className='linkedin-logo' href="https://www.linkedin.com/in/cody-jennings-91b420161/">
-                        <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                        <FontAwesomeIcon icon={faLinkedin} size="3x" />
                     </a>
                 </div>
                 <br />
                 <div className='skills'>
                     <br></br><h4>Skills</h4>
+                    <br></br>
                     <hr />
                     <br></br>
                     <ul>
