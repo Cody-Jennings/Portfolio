@@ -153,84 +153,14 @@ function Contact() {
 
   return (
 
-    <Container fluid className="my-custom-class" >
+    <Container fluid className="contact-container">
       <Row className="text-center">
         <Col>
           <h1 className="display-4">Contact Me</h1><br></br>
           <hr/><br></br>
         </Col>
       </Row>
-      {/* <Row className="justify-content-md-center">
-        <Col>
-          <h3 className="text-center mb-3">Cody Jennings</h3>
-          <address className="mb-3">
-            <strong>Email:</strong>{" "}
-            <a href={`mailto:${contactConfig.YOUR_EMAIL}`} className="text-decoration-none">
-              {contactConfig.YOUR_EMAIL}
-            </a>
-            <br />
-            <br />
-            {contactConfig.hasOwnProperty("YOUR_FONE") ? (
-              <p>
-                <strong>Phone:</strong> {contactConfig.YOUR_FONE}
-              </p>
-            ) : (
-              ""
-            )}
-          </address>
-          <p>{contactConfig.description}</p>
-        </Col><br></br>
-      <div className="form-container">
-        <Col md="6">
-          <form onSubmit={handleSubmit}>
-            <Row className='input-row'>
-              <Col>
-                <input
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                  type="text"
-                  value={name}
-                  onChange={e => setName(e.target.value)}
-                  required
-                  className="form-name input-box"
-                />
-              </Col>
-              <Col>
-                <input
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  type="email"
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
-                  required
-                  className="form-email input-box"
-                />
-              </Col>
-            </Row>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Message"
-              rows="5"
-              value={message}
-              onChange={e => setMessage(e.target.value)}
-              required
-              className="form-email input-box"
-            ></textarea>
-            <Row>
-              <Col className="d-flex justify-content-center">
-                <button type="submit" className="btn btn-primary">
-                  Send Me a Message
-                </button>
-              </Col>
-            </Row>
-          </form>
-        </Col>
-        </div>
-      </Row> */}
-      <Row className="justify-content-md-center">
+      <Row className="info-container">
   <Col className="my-info">
     <h3 className="text-center mb-3">Cody Jennings</h3>
     <address className="mb-3">
@@ -248,6 +178,7 @@ function Contact() {
         ""
       )}
     </address>
+    <br></br>
     <p>{contactConfig.description}</p>
   </Col>
   <Col className="contact-info">
