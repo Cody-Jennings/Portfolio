@@ -1,6 +1,7 @@
-/* #message {
-  width: 100%
-} */
+#message {
+  
+  height: 70px
+}
 
 .contact-container {
   max-width: 100%;
@@ -131,6 +132,12 @@ form > .row {
   width: 100%
 }
 
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    margin: 10px auto;
+  }
+  }
 /* .info-container{
   margin-top: 40px;
 } */

@@ -144,7 +144,7 @@ function Contact() {
     YOUR_EMAIL: 'jenningscc9@gmail.com',
     YOUR_FONE: '(336)709-6999',
     description:
-      'I look forward to hearing from you and discussing our future collaborations! ',
+      'I look forward to discussing our future collaborations! ',
     YOUR_SERVICE_ID: 'service_id',
     YOUR_TEMPLATE_ID: 'template_id',
     YOUR_USER_ID: 'user_id',
