@@ -4,17 +4,17 @@
     padding: 20px 30px;
     background-color: #999999;
     border-radius: 20px;
-    /* margin: 15px; */
     position: relative;
     overflow: auto;
     text-align: center;
-    /* align-content: center;
-    justify-content: center; */
-    /* box-shadow: var(--mainColor) 0px 4px 8px 10px; */
-    /* cursor: scroll; */
     margin:auto
   }
 
+  .Typewriter {
+    color: blue;
+    height: 30px;
+    font-size: x-large;
+  }
 .home {
     font-family: 'Oswald', sans-serif;
     display: flex;
@@ -27,22 +27,12 @@
   
   }
 
-  
 .about-img {
-
-    /* margin-bottom: 50px; */
-    /* border-radius: 50%; */
-    /* width: 50%; */
     height: 50%;
-    /* overflow: hidden; */
-    /* justify-content: center;
-    */
+ }
 
-}
 .about-img img {
     height: 150%;
     width: 60%;
     border-radius: 20%;
-    
-    
-}
+ }

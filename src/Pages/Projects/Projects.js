@@ -1,11 +1,11 @@
 // setting up my SPA routes by importing all pages from react router
 import React from 'react'
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
 import { projects } from '../../Components/data'
-import { useState } from 'react'
+// import { useState } from 'react'
 import './Projects.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub, faGoogle, faLinkedin, faOpenid } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faGoogle} from "@fortawesome/free-brands-svg-icons"
 
 
 

@@ -120,13 +120,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
 import './Contact.css'
+import { useHistory } from "react-router-dom";
 
 function Contact() {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
     const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
@@ -136,7 +137,10 @@ function Contact() {
     setEmail('');
     setMessage('');
 
-    alert(`Your message has been sent!\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+    
+   
+
+    // alert(`Your message has been sent!\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
 
   }
 
@@ -157,81 +161,80 @@ function Contact() {
       <Row className="text-center">
         <Col>
           <h1 className="display-4">Contact Me</h1><br></br>
-          <hr/><br></br>
+          <hr /><br></br>
         </Col>
       </Row>
       <Row className="info-container">
-  <Col className="my-info">
-    <h3 className="text-center mb-3">Cody Jennings</h3>
-    <address className="mb-3">
-      <strong>Email:</strong>{" "}
-      <a href={`mailto:${contactConfig.YOUR_EMAIL}`} className="text-decoration-none">
-        {contactConfig.YOUR_EMAIL}
-      </a>
-      <br />
-      <br />
-      {contactConfig.hasOwnProperty("YOUR_FONE") ? (
-        <p>
-          <strong>Phone:</strong> {contactConfig.YOUR_FONE}
-        </p>
-      ) : (
-        ""
-      )}
-    </address>
-    <br></br>
-    <p>{contactConfig.description}</p>
-  </Col>
-  <Col className="contact-info">
-    <div className="form-container">
-      <form onSubmit={handleSubmit}>
-        <Row className='input-row'>
-          <Col>
-            <input
-              id="name"
-              name="name"
-              placeholder="Name"
-              type="text"
-              value={name}
-              onChange={e => setName(e.target.value)}
-              required
-              className="form-name input-box"
-            />
-          </Col>
-          <Col>
-            <input
-              id="email"
-              name="email"
-              placeholder="Email"
-              type="email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              required
-              className="form-email input-box"
-            />
-          </Col>
-        </Row>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Message"
-          rows="5"
-          value={message}
-          onChange={e => setMessage(e.target.value)}
-          required
-          className="form-email input-box"
-        ></textarea>
-        <Row>
-          <Col className="d-flex justify-content-center">
-            <button type="submit" className="btn btn-primary">
-              Send Me a Message
-            </button>
-          </Col>
-        </Row>
-      </form>
-    </div>
-  </Col>
-</Row>
-
+        <Col className="my-info">
+          <h3 className="text-center mb-3">Cody Jennings</h3>
+          <address className="mb-3">
+            <strong>Email:</strong>{" "}
+            <a href={`mailto:${contactConfig.YOUR_EMAIL}`} className="text-decoration-none">
+              {contactConfig.YOUR_EMAIL}
+            </a>
+            <br />
+            <br />
+            {contactConfig.hasOwnProperty("YOUR_FONE") ? (
+              <p>
+                <strong>Phone:</strong> {contactConfig.YOUR_FONE}
+              </p>
+            ) : (
+              ""
+            )}
+          </address>
+          <br></br>
+          <p>{contactConfig.description}</p>
+        </Col>
+        <Col className="contact-info">
+          <div className="form-container">
+            <form onSubmit={handleSubmit}>
+              <Row className='input-row'>
+                <Col>
+                  <input
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    type="text"
+                    value={name}
+                    onChange={e => setName(e.target.value)}
+                    required
+                    className="form-name input-box"
+                  />
+                </Col>
+                <Col>
+                  <input
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    type="email"
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
+                    required
+                    className="form-email input-box"
+                  />
+                </Col>
+              </Row>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message"
+                rows="5"
+                value={message}
+                onChange={e => setMessage(e.target.value)}
+                required
+                className="form-email input-box"
+              ></textarea>
+              <Row>
+                <Col className="d-flex justify-content-center">
+                  <button type="submit" className="btn btn-primary">
+                    Send Me a Message
+                  </button>
+                </Col>
+              </Row>
+            </form>
+          </div>
+        </Col>
+      </Row>
     </Container>
   );
 }
