@@ -335,6 +335,7 @@
 // export default Contact;
 
 import React from "react"
+import './Contact.css'
 
 function Contact() {
   return <div>
@@ -344,20 +345,25 @@ function Contact() {
       <input type="hidden" name="form-name" value="contact" />
 
       <div>
-        <label>Name <br />
-          <input type="text" name="ame" />
+        <label>First name <br />
+          <input type="text" name="first-name" required />
+        </label>
+      </div>
+      <div>
+        <label>Last name <br />
+          <input type="text" name="last-name" required />
         </label>
       </div>
       <div>
         <label htmlFor="email">Email</label> <br />
-        <input id="email" type="email" name="email" />
+        <input id="email" type="email" name="email" required />
       </div>
       <div>
         <label>Message <br />
-          <textarea name="message"></textarea>
+          <textarea name="message" required cols={30} rows={10} ></textarea>
         </label>
       </div>
-      <br /><button type="submit">Submit</button>
+      <br /><button className='btn' id='contact-button' type="submit">Submit</button>
     </form>
   </div>
 }
