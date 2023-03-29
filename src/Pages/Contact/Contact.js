@@ -340,11 +340,8 @@ function Contact() {
   return <div>
 
     <form
-      name="contact v1"
-      method="post"
-      data-netlify="true"
-      onSubmit="submit">
-      <input type="hidden" name="form-name" value="contact v1" />
+      name="contact" method="POST" data-netlify="true" onSubmit="submit">
+      <input type="hidden" name="form-name" value="contact" />
 
       <div>
         <label>Name <br />
