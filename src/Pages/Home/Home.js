@@ -18,7 +18,7 @@ function Home() {
                 <br>
                 </br>
                 <div className='about-img'>
-                    <img src="../../../portfolioPicture.jpeg" ></img>
+                    <img src="../../../portfolioPicture.jpeg" alt="profile-picture" ></img>
                 </div>
             </div>
         </div>
