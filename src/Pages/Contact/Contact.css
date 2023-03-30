@@ -1,141 +1,159 @@
-#message {
-  height: 70px
-}
-
 .contact-container {
-  max-width: 100%;
   width: 90%;
-  height: 565px;
+  max-width: 100%;
+  height: 700px;
   padding: 15px;
   margin: auto;
   margin-top: 20px;
-  
   box-sizing: border-box;
   background-color: #999999;
   border-radius: 20px;
- 
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 767px) { /* adjust the max-width and height for smaller screens */
   .contact-container {
-    margin: 10px;
-  }
-}
-
-.form-container {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-}
-
-.col {
-  width: 100%;
-}
-
-.my-info {
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.contact-info {
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
-}
-
-@media (max-width: 768px) {
-  .my-info, .contact-info {
     width: 100%;
-    margin-bottom: 20px;
-  }
-  .my-info {
-    margin-right: 0;
+    height: 100%;
+    max-width: none;
   }
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
+  .contact-main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
 }
 
-h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.contact-inner {
+    margin: 0 auto;
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.contact-title {
+    font-size: 4rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.contact-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1.5rem;
 }
 
 form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-right: 80px;
+
 }
 
-input {
-  width: calc(50% - 10px);
-  margin-right: 20px;
+input, textarea{
+    width: 100%;
+    padding: .8rem;
+    border: thin;
+    margin: .5rem;
+    font-size: 1rem;
 }
 
-textarea {
-  width: 100%;
+label {
+    font-size: 1.2rem;
+    margin: 1rem;
 }
 
-button {
-  background-color: #007bff;
-  border: none;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
+#contact-button, #download-btn {
+    width: 25%;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: center;
 }
 
-button:hover {
-  background-color: #0069d9;
+.resume {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-button:focus {
-  outline: none;
+p {
+    font-size: 1.8rem;
 }
 
-.form-name {
-  margin-right: 5%;
+.contact-name{
+    font-size: 2.5rem;
 }
 
-.form-name,
-.form-email {
-  width: 100%;
-  height: 50px;
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  margin-bottom: 20px;
+.connected-text{
+    font-size: 3rem;
+    display: flex;
 }
 
-.input-row .input-box {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  padding: 8px;
-  width: 100%;
+.email-link:hover {
+    text-decoration: underline;
+    color: rgb(24, 24, 187);
 }
 
-form > .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%
+.contact-info-message {
+margin-right: 15rem;
+font-size: 3rem;
 }
 
+.form-container {
+  font-size: 1.5rem;
+}
 
-@media screen and (max-width: 768px) {
-  .contact-container {
-    margin: 10px auto;
+.form-message {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.contact-message {
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.icon {
+    font-size: xx-large;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-form {
+      width: 100%;
+      margin: 0;
+    }
+    
+    .form-group {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
   }
+  
+  /* For medium devices (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 992px) {
+    .contact-form {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    .form-group {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: .375rem .75rem;
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
   }
-
-
