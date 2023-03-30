@@ -56,11 +56,11 @@ function Contact() {
                 </div>
                 <div>
                   <label>Message<br />
-                    <textarea name="message" required cols={30} rows={8} ></textarea>
+                    <textarea name="message" required cols={30} rows={5} ></textarea>
                   </label>
                 </div>
               </div>
-              <button className='btn' id='contact-button' type="submit">Send</button>
+              <button className='btn' id='contact-button' type="submit" >Send Message</button>
             </form>
           </div>
         </div>

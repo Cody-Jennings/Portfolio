@@ -9,13 +9,18 @@
     max-width: 100%;
   
   }
+
+  .about h1{
+    color: blue;
+  }
   .about-text{
     text-align: justify;
+    font-size: x-large;
   }
   
   .about-container {
     height: 600px;
-    width: 800px;
+    width: 1000px;
     padding: 20px 30px;
     background-color: #999999;
     border-radius: 20px;
@@ -52,3 +57,4 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
+

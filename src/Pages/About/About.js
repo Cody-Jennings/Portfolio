@@ -1,15 +1,14 @@
 import React from 'react'
 import { faGithub, faLinkedin, faHtml5, faCss3Alt, faSquareJs, faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { SiMongodb, SiExpress } from "react-icons/si"
-import { FaLaptopCode } from "react-icons/fa"
-
+import { SiMongodb, SiExpress, SiVisualstudiocode } from "react-icons/si"
+import { FaBootstrap, FaGit, FaLaptopCode, FaNpm, FaPython } from "react-icons/fa"
+import { faCog } from '@fortawesome/free-solid-svg-icons'
 import "../About/About.css"
 
 function About() {
     return (
         <div className='about'>
-
             <div className='about-container'>
                 <h1>About</h1>
                 <br></br><hr />
@@ -25,8 +24,9 @@ function About() {
                     </a>
                 </div>
                 <br />
+                <br></br>
                 <div className='skills'>
-                    <h4>Skills</h4>
+                    <h3>Skills</h3>
                     <br></br>
                     <hr />
                     <br></br>
@@ -58,6 +58,25 @@ function About() {
                             <span className='skill-title'>Node.js</span>
                         </div>
                         <div className='skill'>
+                            <FaPython size="2em" title="Python" /> Python
+                        </div>
+                        <div className='skill'>
+                            <FontAwesomeIcon icon={faCog} size="2x" />
+                            <span className='skill-title'>Restful API</span>
+                        </div>
+                        <div className='skill'>
+                            <FaBootstrap size="2em" title="Bootstrap" /> Bootstrap
+                        </div>
+                        <div className='skill'>
+                            <FaNpm size="2em" title="npm" /> npm
+                        </div>
+                        <div className='skill'>
+                            <FaGit size="2em" title="git" /> git
+                        </div>
+                        <div className='skill'>
+                            <SiVisualstudiocode size="2em" title="VSCode" /> VSCode
+                        </div>
+                        <div className='skill'>
                             <FaLaptopCode size="2em" title="Programming" /> Programming
                         </div>
                     </div>
@@ -69,4 +88,3 @@ function About() {
 }
 
 export default About
-     

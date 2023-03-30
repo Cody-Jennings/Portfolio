@@ -12,6 +12,9 @@ import { faGithub, faGoogle} from "@fortawesome/free-brands-svg-icons"
 function Projects() {
     return (
         <div className='projects'>
+      <div className="title-container">
+        <h1 className="projectsh1">My Projects</h1>
+      </div>
             {projects.map((project, index) => (
                 <div key={index} className='project-container' title='Scroll down to view entire project'>
                     <h2 className="project-title">{project.title}</h2><br></br>
