@@ -1,7 +1,7 @@
 import React from "react"
 import './Contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobileScreen, faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons'
+import { faMobileScreen, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
   return (
@@ -20,8 +20,8 @@ function Contact() {
               <br />
               <p><FontAwesomeIcon className="icon" icon={faEnvelope} /><strong> Email: </strong> <a className='email-link' href={"mailto:jenningscc9@gmail.com"}>jenningscc9@gmail.com</a></p>
               <br />
-              <div className='resume'><p><FontAwesomeIcon className="icon" icon={faDownload} /><strong> Resume: </strong></p><a className='btn' id='download-btn' href="../components/Cody_Jennings_Software_Engineer_Resume.pdf" download>Download</a></div>
-              <br />
+              {/* <div className='resume'><p><FontAwesomeIcon className="icon" icon={faDownload} /><strong> Resume: </strong></p><a className='btn' id='download-btn' href="../components/Cody_Jennings_Software_Engineer_Resume.pdf" download>Download</a></div>
+              <br /> */}
             </div>
             <p className='contact-message'><strong>I look forward to collaborating with you!</strong></p>
           </address>

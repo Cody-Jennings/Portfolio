@@ -2,7 +2,7 @@
     height: 600px;
     width: 1000px;
     padding: 20px 30px;
-    background-color: #999999;
+    background-color: grey;
     border-radius: 20px;
     position: relative;
     overflow: auto;
@@ -27,12 +27,20 @@
   
   }
 
-.about-img {
+/* .about-img {
     height: 50%;
- }
+ } */
 
-.about-img img {
-    height: 150%;
-    width: 60%;
-    border-radius: 20%;
- }
+ .about-img img {
+  height: 50%;
+  width: 500px;
+  max-width: 100%;
+  border-radius: 20%;
+}
+
+@media (max-width: 768px) {
+  .about-img img {
+    height: 400px;
+    width: auto;
+  }
+}
