@@ -18,12 +18,12 @@ function Contact() {
             <div className='contact-info'>
               <p><FontAwesomeIcon className="icon" icon={faMobileScreen} /><strong> Phone: </strong>(336) 709 - 6999</p>
               <br />
-              <p><FontAwesomeIcon className="icon" icon={faEnvelope} /><strong> Email: </strong> <a className='email-link' href={"mailto:jenningscc9@gmail.com"}>jenningscc9@gmail.com</a></p>
+              <p><FontAwesomeIcon className="icon" icon={faEnvelope} /><strong> Email: </strong> <a className='email-link' href={"mailto:jenningscc9@gmail.com"} target="_blank" rel="noopener noreferrer">jenningscc9@gmail.com</a></p>
               <br />
               {/* <div className='resume'><p><FontAwesomeIcon className="icon" icon={faDownload} /><strong> Resume: </strong></p><a className='btn' id='download-btn' href="../components/Cody_Jennings_Software_Engineer_Resume.pdf" download>Download</a></div>
               <br /> */}
             </div>
-            <p className='contact-message'><strong>I look forward to collaborating with you!</strong></p>
+            <p className='contact-message'><strong>I'm eager to join forces with you and achieve great things.</strong></p>
           </address>
           <div className='form'>
             <div className='form-container'><strong>Leave Me A Message</strong></div>

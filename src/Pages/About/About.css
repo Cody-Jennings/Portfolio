@@ -11,7 +11,7 @@
   }
 
   .about h1{
-    color: blue;
+    color: black;
   }
   .about-text{
     text-align: justify;
@@ -22,7 +22,7 @@
     height: 600px;
     width: 1000px;
     padding: 20px 30px;
-    background-color: #999999;
+    background-color: grey;
     border-radius: 20px;
     margin: 15px;
     position: relative;

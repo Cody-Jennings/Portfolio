@@ -23,10 +23,10 @@ function Projects() {
                     <br></br><p className="project-description">{project.description}</p>
                     <br></br><img src={project.image} alt={project.title} onError={(e) => console.log(e.target.error)} className='project-image' />
                     <div className="logo">
-                        <a href={project.link} >
+                        <a href={project.link} target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon className="project-logo" icon={faGoogle} size="2x" />
                         </a>
-                        <a href={project.github} >
+                        <a href={project.github} target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon className="github-logo" icon={faGithub} size="2x" />
                         </a>
                     </div>
