@@ -14,9 +14,20 @@ Portfolio
 - Node.js
 - VS Code
 - Github
-- React-bootStrap/bootstrap
-- FontAwesome Icons
-- Render Web Hosting Services
+- Netlify Web Hosting Services
+- React DOM 
+- React Router DOM 
+- React Bootstrap
+- Bootstrap 
+-Font Awesome Free (both free-brands-svg-icons and free-solid-svg-icons) (@fortawesome/free-brands-svg-icons and @fortawesome/    free-solid-svg-icons)
+- Font Awesome React component library
+- React Icons 
+- Typewriter Effect 
+- Simple Icons 
+- Web Vitals 
+- Testing Library Jest DOM 
+- Testing Library React 
+- Testing Library User Event
 
 
 ## Resources
@@ -27,13 +38,13 @@ Portfolio
 
 - [Github]
 
-- [React-bootstrap](https://react-bootstrap.github.io/getting-started/introduction/)
-
 - [Stack Overflow]
 
 - [MDN]
 
 - [Technology component Documentation]
+
+- [Fellow Software Engineer portfolios for inspiration]
 
 
 
