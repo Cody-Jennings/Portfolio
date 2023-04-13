@@ -43,6 +43,7 @@
   font-size: 4rem;
   padding-bottom: 1.5rem;
   text-align: center;
+  color:black
   }
   
   .contact-body {
@@ -109,10 +110,14 @@
   font-size: 3rem;
   display: flex;
   }
+
+  .email-link {
+    color:white;
+  }
   
   .email-link:hover {
   text-decoration: underline;
-  color: rgb(24, 24, 187);
+  color: blue;
   }
   
   .contact-info-message {
@@ -161,7 +166,6 @@
   @media (min-width: 768px) { /* adjust the min-width for larger screens */
     .contact-info {
     width: 80%;
-    /* margin-right: 20px; */
     }
     
     .form-container {

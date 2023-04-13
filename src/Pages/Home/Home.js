@@ -7,7 +7,7 @@ function Home() {
 
         <div className='home'>
             <div className='home-container'>
-                <h1>Cody Jennings</h1><br></br><hr></hr><br></br>
+                <h1><strong>Cody Jennings</strong></h1><br></br><hr></hr><br></br>
                 <Typewriter
                     options={{
                         strings: ['Software Engineer', 'MERN Stack', 'Full Stack', 'Front End', 'Back End'],
