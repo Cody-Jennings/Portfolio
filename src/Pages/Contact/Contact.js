@@ -7,7 +7,9 @@ function Contact() {
   return (
     <div className='contact-container'>
       <div className='contact-inner'>
-        <div className='contact-title'><strong>Contact Me</strong><hr></hr></div>
+        <div className='contact-title'><strong>Contact Me</strong></div>
+        <br></br>
+        <hr></hr>
         <div className='contact-body'>
           <address>
             <p className='contact-info-message'>Let's Stay Connected</p>

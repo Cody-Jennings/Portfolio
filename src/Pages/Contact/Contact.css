@@ -43,7 +43,8 @@
   font-size: 4rem;
   padding-bottom: 1.5rem;
   text-align: center;
-  color:black
+  color:black;
+  margin-bottom: 5px;
   }
   
   .contact-body {
