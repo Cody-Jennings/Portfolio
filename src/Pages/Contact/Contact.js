@@ -23,7 +23,7 @@ function Contact() {
               {/* <div className='resume'><p><FontAwesomeIcon className="icon" icon={faDownload} /><strong> Resume: </strong></p><a className='btn' id='download-btn' href="../components/Cody_Jennings_Software_Engineer_Resume.pdf" download>Download</a></div>
               <br /> */}
             </div>
-            <p className='contact-message'><strong>I'm eager to join forces with you and achieve great things.</strong></p>
+            <p className='contact-message'><strong>I look forward to collaborating with you on future projects!</strong></p>
           </address>
           <div className='form'>
             <div className='form-container'><strong>Leave Me A Message</strong></div>
